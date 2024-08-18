@@ -1,14 +1,14 @@
 'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
-import Form from "./components/LoginForm";
+import Search from "./components/Movies";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-     <Form>
+     <Search>
       
-     </Form>
+     </Search>
     </main>
   );
 }
