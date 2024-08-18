@@ -41,9 +41,10 @@ export default function Home() {
 function renderMovies(){
     const { Meta } = Card;
     if (!data) return null;
-    return data.Search.map((movie: Movie)=>{
+    return data.Search.map((movie: Movie, index:number)=>{
         return(
             <Card
+            key={index}
             hoverable 
             style={{ width: 240 }}
             cover={<img alt={`${movie.Title} Poster`} src={movie.Poster} />}>
